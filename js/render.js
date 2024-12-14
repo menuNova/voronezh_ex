@@ -45,7 +45,7 @@ export function renderMenu() {
             }
             card.innerHTML = `
                 <div class="card__img">
-                    <img src="./img/menu/${item.name.ru}.jpg" alt="">
+                    <img src="./img/menu/${item.name.ru}.png" alt="">
                 </div>
                 <div class="card__content">
                     <div class="card__info">

@@ -1,8 +1,8 @@
 export let data = {
     valute: '$',
     language: document.documentElement.lang,
-    name: 'Shakespeare',
-    languages: ['ru', 'en', 'de']
+    name: 'Воронеж',
+    languages: ['ru', 'en']
 };
 
 
@@ -26,191 +26,164 @@ export let languageData = {
             portion: 'Portion',
             count: 'Count'
         },
-    },
-    de: {
-        'title': 'Menü | ' + data.name,
-        '#menuTitle': 'Menü',
-        '#orderTitle': 'Ihre Bestellung',
-        'forJs': {
-            total: 'Gesamt',
-            portion: 'Portion',
-            count: 'Count'
-        },
-    },
+    }
 };
-
 
 
 
 export let dishesData = {
     'category1': {
         name: {
-            ru: 'Напитки',
-            en: 'Drinks',
-            de: 'Getränke',
+            ru: 'Закуски',
+            en: 'Appetizers',
+            de: 'Vorspeisen',
         },
         items: [
             {
                 name: {
-                    ru: 'Лимонад',
-                    en: 'Lemonade',
-                    de: 'Limonade',
+                    ru: 'Тартар с грибами',
+                    en: 'Tartare with mushrooms',
+                    de: 'Tartar mit Pilzen',
                 },
                 price: {
-                    '200ml': 5,
-                    '500ml': 10,
+                    '1': 750,
                 },
                 description: {
-                    ru: 'Освежающий напиток с лимонным вкусом',
-                    en: 'Refreshing drink with lemon flavor',
-                    de: 'Erfrischungsgetränk mit Zitronengeschmack',
+                    ru: 'Тартар с грибами',
+                    en: 'Tartare with mushrooms',
+                    de: 'Tartar mit Pilzen',
                 },
             },
             {
                 name: {
-                    ru: 'Мохито безалкогольный',
-                    en: 'Non-alcoholic Mojito',
-                    de: 'Alkoholfreier Mojito',
+                    ru: 'Телятина с соусом Тонато и копченым маслом',
+                    en: 'Beef with Tonato sauce and smoked butter',
+                    de: 'Rindfleisch mit Tonato-Sauce und geräuchter Butter',
                 },
                 price: {
-                    '200ml': 7,
-                    '400ml': 13,
+                    '1': 1350,
                 },
                 description: {
-                    ru: 'Освежающий мятный коктейль с лаймом',
-                    en: 'Refreshing mint cocktail with lime',
-                    de: 'Erfrischender Minzcocktail mit Limette',
+                    ru: 'Телятина с соусом Тонато и копченым маслом',
+                    en: 'Beef with Tonato sauce and smoked butter',
+                    de: 'Rindfleisch mit Tonato-Sauce und geräuchter Butter',
                 },
             },
             {
                 name: {
-                    ru: 'Чай с лимоном',
-                    en: 'Lemon Tea',
-                    de: 'Zitronentee',
+                    ru: 'Камамбер по-Аджарски с хурмой',
+                    en: 'Camembert Adjarian style with persimmon',
+                    de: 'Camembert nach Adjarischer Art mit Persimone',
                 },
                 price: {
-                    '200ml': 4,
-                    '400ml': 8,
+                    '1': 950,
                 },
                 description: {
-                    ru: 'Горячий чай с лимоном',
-                    en: 'Hot tea with lemon',
-                    de: 'Heißer Tee mit Zitrone',
+                    ru: 'Камамбер по-Аджарски с хурмой',
+                    en: 'Camembert Adjarian style with persimmon',
+                    de: 'Camembert nach Adjarischer Art mit Persimone',
                 },
             },
         ],
     },
     'category2': {
         name: {
-            ru: 'Булочные изделия',
-            en: 'Bakery products',
-            de: 'Backwaren',
+            ru: 'Супы',
+            en: 'Soups',
+            de: 'Suppen',
         },
         items: [
             {
                 name: {
-                    ru: 'Круассан',
-                    en: 'Croissant',
-                    de: 'Croissant',
+                    ru: 'Крем-суп из тыквы',
+                    en: 'Pumpkin cream soup',
+                    de: 'Kürbissuppe',
                 },
                 price: {
-                    '100g': 4,
-                    '200g': 7,
+                    '1': 450,
                 },
                 description: {
-                    ru: 'Классический французский круассан',
-                    en: 'Classic French croissant',
-                    de: 'Klassisches französisches Croissant',
-                },
-            },
-            {
-                name: {
-                    ru: 'Слойка с яблоком',
-                    en: 'Apple Puff',
-                    de: 'Apfeltasche',
-                },
-                price: {
-                    '100g': 5,
-                    '200g': 9,
-                },
-                description: {
-                    ru: 'Слойка с начинкой из яблок',
-                    en: 'Puff pastry with apple filling',
-                    de: 'Blätterteig mit Apfelfüllung',
-                },
-            },
-            {
-                name: {
-                    ru: 'Багет',
-                    en: 'Baguette',
-                    de: 'Baguette',
-                },
-                price: {
-                    '100g': 3,
-                    '200g': 5,
-                },
-                description: {
-                    ru: 'Французский хлеб с хрустящей корочкой',
-                    en: 'French bread with a crispy crust',
-                    de: 'Französisches Brot mit knuspriger Kruste',
+                    ru: 'Крем-суп из тыквы',
+                    en: 'Pumpkin cream soup',
+                    de: 'Kürbissuppe',
                 },
             },
         ],
     },
     'category3': {
         name: {
-            ru: 'Десерты',
-            en: 'Desserts',
-            de: 'Nachspeisen',
+            ru: 'Горячее',
+            en: 'Hot Dishes',
+            de: 'Hauptgerichte',
         },
         items: [
             {
                 name: {
-                    ru: 'Чизкейк',
-                    en: 'Cheesecake',
-                    de: 'Käsekuchen',
+                    ru: 'Ригатони с уткой и белыми грибами',
+                    en: 'Rigatoni with duck and white mushrooms',
+                    de: 'Rigatoni mit Ente und weißen Pilzen',
                 },
                 price: {
-                    '100g': 6,
-                    '200g': 12,
-                    '300g': 16,
+                    '1': 990,
                 },
                 description: {
-                    ru: 'Лёгкий сырный торт с клубничным соусом',
-                    en: 'Light cheese cake with strawberry sauce',
-                    de: 'Leichter Käsekuchen mit Erdbeersoße',
+                    ru: 'Ригатони с уткой и белыми грибами',
+                    en: 'Rigatoni with duck and white mushrooms',
+                    de: 'Rigatoni mit Ente und weißen Pilzen',
                 },
             },
             {
                 name: {
-                    ru: 'Шоколадный мусс',
-                    en: 'Chocolate Mousse',
-                    de: 'Schokoladenmousse',
+                    ru: 'Утиная грудка с Горяайвой и брусникой',
+                    en: 'Duck breast with quince and lingonberries',
+                    de: 'Entenbrust mit Quitte und Preiselbeeren',
                 },
                 price: {
-                    '100g': 8,
-                    '200g': 15,
+                    '1': 1800,
                 },
                 description: {
-                    ru: 'Воздушный шоколадный десерт',
-                    en: 'Airy chocolate dessert',
-                    de: 'Luftiges Schokoladen-Dessert',
+                    ru: 'Утиная грудка с айвой и брусникой',
+                    en: 'Duck breast with quince and lingonberries',
+                    de: 'Entenbrust mit Quitte und Preiselbeeren',
+                },
+            },
+        ],
+    },
+    'category4': {
+        name: {
+            ru: 'Десерты',
+            en: 'Desserts',
+            de: 'Desserts',
+        },
+        items: [
+            {
+                name: {
+                    ru: 'Пряная тыква Тахини',
+                    en: 'Spicy pumpkin Tahini',
+                    de: 'Würziger Kürbis Tahini',
+                },
+                price: {
+                    '1': 490,
+                },
+                description: {
+                    ru: 'Пряная тыква Тахини',
+                    en: 'Spicy pumpkin Tahini',
+                    de: 'Würziger Kürbis Tahini',
                 },
             },
             {
                 name: {
-                    ru: 'Тирамису',
-                    en: 'Tiramisu',
-                    de: 'Tiramisu',
+                    ru: 'Тыквенный чизкейк с обливкой и пеканом',
+                    en: 'Pumpkin cheesecake with icing and pecan',
+                    de: 'Kürbis-Cheesecake mit Zuckerguss und Pekannüssen',
                 },
                 price: {
-                    '100g': 10,
-                    '200g': 18,
+                    '1': 650,
                 },
                 description: {
-                    ru: 'Итальянский десерт с маскарпоне и кофе',
-                    en: 'Italian dessert with mascarpone and coffee',
-                    de: 'Italienisches Dessert mit Mascarpone und Kaffee',
+                    ru: 'Тыквенный чизкейк с обливкой и пеканом',
+                    en: 'Pumpkin cheesecake with icing and pecan',
+                    de: 'Kürbis-Cheesecake mit Zuckerguss und Pekannüssen',
                 },
             },
         ],
@@ -218,16 +191,13 @@ export let dishesData = {
 };
 
 
+
 export let cartData = {
     
 };
 
-// if (localStorage.getItem('cartData')) {
-//     cartData = JSON.parse(localStorage.getItem('cartData'));
-// };
 
 
 export function setCartData(newData) {
     cartData = newData;
-    // localStorage.setItem('cartData', JSON.stringify(cartData));
 };
